@@ -8,7 +8,7 @@ export default function Home() {
 
   const handleSearch = async (event) => {
     event.preventDefault();
-    const response = await axios.get(`http://www.omdbapi.com/?apikey=a2b07930&s=&s=${searchQuery}`);
+    const response = await axios.get(`https://www.omdbapi.com/?apikey=a2b07930&s=&s=${searchQuery}`);
     setSearchResult(response.data.Search);
   };
 
